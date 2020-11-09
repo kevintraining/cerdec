@@ -5,7 +5,7 @@ function upload(firstname)
 
 x = sprintf('c:\\github\\trunk\\%s.zip', firstname);
 zip(x, 'c:\class');
-svn('add', x);
+svn('add --force', x);
 svn('ci', x, '-m ""');
 
 end
